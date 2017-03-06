@@ -185,34 +185,34 @@
         android:text="Borrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
         android:id="@+id/btnc"
-        android:layout_below="@+id/btn_cero"
-        android:layout_toStartOf="@+id/btn_igual"
         android:onClick="onClickBorrar"
         tools:text="@string/btnc"
         android:textColorLink="@android:color/holo_orange_dark"
-        android:background="@android:color/holo_orange_light" />
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btn_igual"
+        android:layout_marginBottom="60dp" />
 
     <Button
         android:text="="
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_igual"
+        android:onClick="onClickIgual"
+        android:background="@android:color/holo_orange_light"
         android:layout_alignBaseline="@+id/btnc"
         android:layout_alignBottom="@+id/btnc"
         android:layout_toEndOf="@+id/btn_cero"
-        android:onClick="onClickIgual"
-        android:background="@android:color/holo_orange_light" />
+        android:layout_marginStart="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:id="@+id/txt_resultado"
+        android:id="@+id/txt_res"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_above="@+id/btn_nueve"
-        android:layout_alignParentTop="true"
-        android:background="@color/common_google_signin_btn_text_dark_focused" />
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>
